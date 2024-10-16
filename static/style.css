@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #85FFBD 0%, #FFFB7D 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    margin-top: 5.3rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 400px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    transform: scale(0.9);
+    transform-origin: top center;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.input-section, .sorting-section, .name-list-section {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.input-box {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 1em;
+}
+
+.btn {
+    background-color: #5bc19c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.btn[id="getNames"] {
+    margin-bottom: 25px;
+}
+
+.btn:hover {
+    background-color: #4da686;
+}
+
+.sort-btn {
+    width: 38%;
+    margin: 5px;
+}
+
+.name-list-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.name-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 250px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.name-list li {
+    background-color: #f4f4f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: transform 0.2s ease;
+}
+
+.name-list li:hover {
+    transform: scale(1.02);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5bc19c;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 10px;
+}
